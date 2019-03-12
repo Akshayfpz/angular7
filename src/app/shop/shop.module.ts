@@ -9,7 +9,7 @@ import { routes } from './shop.routing';
 import { RouterModule } from '@angular/router';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SchedulerComponent } from './scheduler/scheduler.component';
-
+ 
 @NgModule({
   imports: [
     RouterModule.forChild(routes),

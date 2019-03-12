@@ -1,14 +1,15 @@
 import {Component, ElementRef, OnInit, ViewChild, ViewEncapsulation } from "@angular/core";
 import "dhtmlx-scheduler";
-import {} from "@types/dhtmlxscheduler";
+import {} from "dhtmlxscheduler";
 
 @Component({
   encapsulation: ViewEncapsulation.None,
   selector: 'app-scheduler',
   templateUrl: './scheduler.component.html',
-  styleUrls: ['./scheduler.component.scss']
+  styleUrls: ['./scheduler.component.scss'] 
 })
 export class SchedulerComponent implements OnInit {
+  
   @ViewChild("scheduler_here") schedulerContainer: ElementRef;
 
     ngOnInit(){
@@ -21,9 +22,16 @@ export class SchedulerComponent implements OnInit {
         { "id": "7", "start_date": "2017-06-11 00:00:00", "end_date": "2017-06-18 00:00:00", "text": "ATP Master Tennis", "details": "La Caja Magica.\n Madrid, Spain"}
     ];
 
+    // scheduler.attachEvent("onBeforeDrag",this.new_popup);
+    // scheduler.attachEvent("onClick",this.new_popup);
+    // scheduler.attachEvent("onBeforeLightBox",this.new_popup);
+  
     scheduler.config.xml_date="%Y-%m-%d %H:%i";
     scheduler.init(this.schedulerContainer.nativeElement,new Date(2017,5,1),"month");
     scheduler.parse(data, "json");
     }
-
+     
+    new_popup(){
+      alert("Fdhb");
+    }
 }
