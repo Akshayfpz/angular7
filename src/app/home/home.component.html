@@ -1,0 +1,14 @@
+<h1 class="text-center">Users</h1>
+
+<div class="row">
+    <div class="col" *ngFor="let user of users.data">
+        <div class="card" >
+            <img class="card-img-top" [src]="user.avatar" alt="Card image" style="width:100%">
+            <div class="card-body">
+              <h4 class="card-title">{{ user.first_name }} {{ user.last_name }}</h4>
+              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
+              <a href="#" class="btn btn-primary" (click)="firstClick(user.first_name,user.last_name)">See Profile</a>
+            </div>
+          </div>
+    </div>
+  </div>

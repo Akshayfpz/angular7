@@ -1,0 +1,20 @@
+<br/>
+<div class="text-center">
+<label>
+    Search:
+    <input [(ngModel)]="searchText" class="form-control" placeholder="search text goes here">
+        
+    </label>
+
+<table class="text-center"> 
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+  </tr>
+  <tr *ngFor="let c of characters | filter : searchText">
+    <td>{{c.Name}}</td>
+    <td>{{c.Location}}</td>
+  </tr>
+  
+</table>
+</div>

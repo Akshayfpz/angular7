@@ -1,0 +1,17 @@
+a.nav-link.text-light.active {
+    color: #ffc107 !important;
+}
+ul{
+    margin-right: 10px;
+}
+.dropdown-menu.show {
+    margin-left: -37px;
+    top: 48px;
+    border-radius: 0px;
+    z-index: 999;
+    padding: 0px;
+}
+.dropdown-item:active{
+    background-color: #343a40;
+    color: #fff !important;
+}

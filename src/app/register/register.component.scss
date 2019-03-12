@@ -1,0 +1,45 @@
+label {
+    display: block;
+    
+    input, textarea {
+        display: inline-block;
+        width: 50%;
+        margin-bottom: 20px;
+        padding: 1em;
+    }
+
+    .error {
+        margin-top: -20px;
+        background: yellow;
+        padding: .5em;
+        display: inline-block;
+        font-size: .9em;
+        margin-bottom: 20px;
+    }
+}
+
+.results {
+    margin-top: 50px;
+
+    strong {
+        display: block;
+    }
+    span {
+        margin-bottom: 20px;
+        display: block;
+    }
+}
+
+.success {
+    margin-top: -20px;
+    background: rgb(72, 255, 0);
+    padding: .5em;
+    display: inline-block;
+    font-size: .9em;
+    margin-bottom: 20px;
+}
+.text-center{
+    width: 50%;
+    text-align: center;
+    margin: 0 auto;
+ }
